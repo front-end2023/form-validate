@@ -23,41 +23,42 @@
                 </div>
             </div>
         </section>
-        <form action="">
+        <form action="/" id="sign-form" onsubmit="return formValidate()">
             <div class="user-name">
-                <label for="username">user name</label>
+                <label for="username">User name</label>
                 <i class="fa-solid fa-user"></i>
-                <input type="text" name="username" id="username" placeholder="User Name">
-                <small id="error"></small>
-                <i class="fa-solid fa-circle-check"></i>
-                <i class="fa-solid fa-circle-exclamation"></i>
+                <input type="text" name="username" id="username" placeholder="User Name" value="">
+                <i class="fa-solid fa-circle-check" id="check1"></i>
+                <i class="fa-solid fa-circle-exclamation" id="exclamation1"></i>
             </div>
+            <small class="error" id="error"></small>
             <div class="email">
                 <label for="email">Email</label>
                 <i class="fa-solid fa-envelope"></i>
-                <input type="text" name="email" id="email" placeholder="Email Address">
-                <small id="error"></small>
-                <i class="fa-solid fa-circle-check"></i>
-                <i class="fa-solid fa-circle-exclamation"></i>
+                <input type="text" name="email" id="email" placeholder="Email Address" value="">
+                <i class="fa-solid fa-circle-check" id="check2"></i>
+                <i class="fa-solid fa-circle-exclamation" id="exclamation2"></i>
             </div>
+            <small class="error" id="error"></small>
             <div class="password">
                 <label for="password">Password</label>
                 <i class="fa-solid fa-lock"></i>
-                <input type="password" name="password" id="password" placeholder="Password">
-                <small id="error"></small>
-                <i class="fa-solid fa-circle-check"></i>
-                <i class="fa-solid fa-circle-exclamation"></i>
+                <input type="password" name="password" id="password" placeholder="Password" value="">
+                <i class="fa-solid fa-circle-check" id="check3"></i>
+                <i class="fa-solid fa-circle-exclamation" id="exclamation3"></i>
             </div>
+            <small class="error" id="error"></small>
             <div class="password">
                 <label for="password">Confirm Password</label>
                 <i class="fa-solid fa-lock"></i>
-                <input type="password" name="password" id="password" placeholder="Confirm Password">
-                <small id="error"></small>
-                <i class="fa-solid fa-circle-check"></i>
-                <i class="fa-solid fa-circle-exclamation"></i>
+                <input type="password" name="password" id="cPassword" placeholder="Confirm Password" value="">
+                <i class="fa-solid fa-circle-check" id="check4"></i>
+                <i class="fa-solid fa-circle-exclamation" id="exclamation4"></i>
             </div>
-            <button value="submit">Sign Up</button>
+            <small class="error" id="error"></small>
+            <button value="submit" >Sign Up</button>
         </form>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
